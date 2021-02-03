@@ -8,7 +8,7 @@ function compute()
     
     if(p){ // if the principal amount of money was given
             if(p <= 0){// if is not a positive number
-                alert("Please add a positive number");
+                alert("Please enter a positive number!");
                 return;
             }
             //make the operation
@@ -25,11 +25,11 @@ function compute()
             document.getElementById("result").innerHTML =  
             "If you deposit <mark><strong>"+p+"</strong></mark> at "+
             "an interest rate of <mark><strong>"+interest_rate+"% </strong></mark>."+
-            "You will receive an amount of <mark><strong>"+result.toFixed(2)+"</strong></mark>," +
+            "You will receive an amount of <mark><strong>"+result.toFixed(2)+"</strong></mark>, " +
             "in the year <mark><strong>"+futureDate.getFullYear()+"</strong><mark>.";
     }
     else{
-        alert("Please fill all the required data..");
+        alert("Please enter the amount of money!");
     }
 
     
